@@ -8,7 +8,7 @@ Este proyecto es una aplicación web full-stack que combina un backend basado en
 
 ### Credenciales de prueba:
 - **Correo**: usuario@prueba.com
-- **Contraseña**: contraseñaPrueba
+- **Contraseña**: prueba
 
 ---
 
