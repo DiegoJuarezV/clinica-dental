@@ -23,6 +23,12 @@ public class DatosIniciales implements ApplicationRunner {
         System.out.println("pass cifrado: "+passCifrado);
         usuarioRepository.save(usuario);
 
+        String passSinCifrarPrueba= "prueba";
+        String passCifradoPrueba= passwordEncoder.encode(passSinCifrarPrueba);
+        Usuario usuarioPrueba= new Usuario("usuarioPrueba", UsuarioRole.ROLE_ADMIN,passCifradoPrueba,"usuario@prueba.com","usuarioPrueba");
+        System.out.println("pass cifradoPrueba: "+passCifradoPrueba);
+        usuarioRepository.save(usuarioPrueba);
+
         String passSinCifrarUser= "user";
         String passCifradoUser= passwordEncoder.encode(passSinCifrarUser);
         Usuario usuario1 = new Usuario("Fabiana", UsuarioRole.ROLE_USER, passCifradoUser, "usuario@usuario.com", "fabianaUsuario1");
