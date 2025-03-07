@@ -13,7 +13,8 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/usuarios")
-@Tag(name = "Controller de Turnos", description = "Este endpoint nos permite trabajar solo con turnos")
+@CrossOrigin(originPatterns = "*")
+@Tag(name = "Controller de acceso", description = "Este endpoint nos permite trabajar con acceso de usuarios")
 public class AccesoRegistroController {
 
     @Autowired
