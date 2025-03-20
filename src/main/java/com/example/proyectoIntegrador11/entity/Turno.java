@@ -9,7 +9,6 @@ import java.time.LocalDate;
 @Setter
 @Getter
 @Entity
-@Table(name = "turnos")
 public class Turno {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
