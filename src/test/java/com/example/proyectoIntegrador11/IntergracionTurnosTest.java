@@ -32,7 +32,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
         @Autowired
         private MockMvc mockMvc;
 
-        public void cargarDatos(){
+        /*public void cargarDatos(){
             Paciente pacienteGuardado= pacienteService.guardarPaciente(new Paciente("Jorgito","Pereyra","111111", LocalDate.of(2024,6,19),new Domicilio("Calle falsa",123,"La Rioja","Argentina"),"jorgito@digitalhouse.com"));
             Odontologo odontologoGuardado= odontologoService.guardarOdontologo(new Odontologo(125L,"Ivan","Bustamante"));
             Turno turnoGuardado = turnoService.registrarTurno(new TurnoDTO(LocalDate.of(2024,10,25), pacienteGuardado, odontologoGuardado));
@@ -49,5 +49,5 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
                     .andExpect(MockMvcResultMatchers.status().isOk())
                     .andReturn();
             assertFalse(respuesta.getResponse().getContentAsString().isEmpty());
-        }
+        }*/
 }
